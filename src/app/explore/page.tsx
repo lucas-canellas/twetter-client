@@ -3,51 +3,6 @@ export default function Explore() {
         <main>
             <div>
                 <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
-                <h1 className="font-noto">Explore</h1>
             </div>
         </main>
     )

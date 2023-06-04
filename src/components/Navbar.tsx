@@ -11,7 +11,7 @@ export const Navbar = () => {
     const pathname = usePathname();
 
     const isActive = (path: string) => {
-        return pathname === path ? 'text-dark-blue border-b-4 rounded-t-lg' : 'text-medium-gray';
+        return pathname === path ? 'text-dark-blue border-b-4' : 'text-medium-gray';
     };
     
     return (
