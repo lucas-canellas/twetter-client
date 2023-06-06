@@ -10,9 +10,12 @@ export const Navbar = () => {
 
     const pathname = usePathname();
 
-    const isActive = (path: string) => {
-        return pathname === path ? 'text-dark-blue border-b-4' : 'text-medium-gray';
-    };
+    const isActive = (path: string, isText: boolean) => {
+        if(isText) {
+            return pathname === path ? 'text-dark-blue' : 'text-medium-gray';
+        }
+        return pathname === path ? 'bg-dark-blue' : '';
+    }
     
     return (
         <div className="bg-white h-[68px] px-4">
@@ -22,9 +25,24 @@ export const Navbar = () => {
                     <span className="font-poppins text-base font-semibold hidden sm:block">Twetter</span>
                 </div>
                 <div className="hidden md:flex gap-14 h-full">
-                    <Link className={`font-medium h-full text-sm ${isActive("/")}`} href="/"><div className="w-20 h-full flex justify-center items-center">Home</div></Link>
-                    <Link className={`font-medium h-full text-sm ${isActive("/explore")}`} href="/explore"><div className="w-20 h-full flex justify-center items-center">Explore</div></Link>
-                    <Link className={`font-medium h-full text-sm ${isActive("/bookmarks")}`} href="/bookmarks"><div className="w-20 h-full flex justify-center items-center">Bookmarks</div></Link>
+                    <Link className={`font-medium h-full text-sm ${isActive("/", true)}`} href="/">
+                        <div className="flex flex-col h-full">
+                            <div className="w-20 h-full flex justify-center items-center">Home</div>
+                            <div className={`w-full h-1  rounded-t-lg ${isActive("/", false)}`}></div>
+                        </div>
+                    </Link>
+                    <Link className={`font-medium h-full text-sm ${isActive("/explore", true)}`} href="/explore">
+                        <div className="flex flex-col h-full">
+                            <div className="w-20 h-full flex justify-center items-center">Explore</div>
+                            <div className={`w-full h-1  rounded-t-lg ${isActive("/explore", false)}`}></div>
+                        </div>
+                    </Link>
+                    <Link className={`font-medium h-full text-sm ${isActive("/bookmarks", true)}`} href="/bookmarks">
+                        <div className="flex flex-col h-full">
+                            <div className="w-20 h-full flex justify-center items-center">Bookmarks</div>
+                            <div className={`w-full h-1  rounded-t-lg ${isActive("/bookmarks", false)}`}></div>
+                        </div>
+                    </Link>
                 </div>
                 <div className="flex gap-3 items-center">
                     <img src="img/avatar.jpg" alt="Avatar" className="w-8 h-8 rounded-lg object-cover" />
